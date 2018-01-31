@@ -1,0 +1,251 @@
+body{
+    background: aqua;
+}
+.body{
+    width: 1000px;
+    margin: 30px auto; 
+}
+
+/* загальні стилі для всіх кнопок: */
+#Edit , #Save , #CreateTable , #CreateList{
+    width: 100px;
+    height: 40px;
+    background: MediumPurple;
+    color: black;
+    margin-top: 15px;
+    border-radius: 10px;
+    border: 0;
+    transition: 0.2s;
+    box-shadow: 0px 7px 23px 0px rgba(219,112,219,1);
+    color: white;
+}
+
+#Style , #Add , #create , #createList , #createList2 , #Blocked , #Confirm , #B , #kurs , #U , #Image{
+    width: 100px;
+    height: 40px;
+    background: MediumPurple;
+    color: black;
+    border-radius: 10px;
+    border: 0;
+    transition: 0.2s;
+    box-shadow: 0px 7px 23px 0px rgba(219,112,219,1);
+    color: white;
+}
+#Image {
+    margin-bottom: 12px;
+}
+#download{
+    margin-top: 10px;
+}
+#Color , #bgColor ,.fFamily , .fSize , .down__stl , .down__selectCOL , .down__styleM , .down__styleM1 , .ul , .ol{
+    width: 100px;
+    height: 40px;
+    background: MediumPurple;
+    color: black;
+    border-radius: 10px;
+    border: 0;
+    box-shadow: 0px 7px 23px 0px rgba(219,112,219,1);
+    color: white;
+}
+
+ #create , #createList , #createList2 , .ul , .ol{
+     height: 25px;
+}
+.fFamily , .fSize , .down__stl , .down__selectCOL , .down__styleM , .down__styleM1  , .ul , .ol{
+    width: 150px;
+     height: 20px;
+}
+
+.down__stl:hover, #createList2:hover , .fFamily:hover ,.fSize:hover, .down__selectCOL:hover , .down__styleM:hover , #bgColor:hover , #create:hover , #createList:hover , #Color:hover , #Add:hover , #Save:hover , #Edit:hover , #Style:hover , .down__styleM1:hover ,  .ul:hover , .ol:hover , #Blocked:hover , #Confirm:hover , #B:hover , #kurs:hover , #U:hover , #Image:hover , #CreateTable:hover , #CreateList:hover{
+    background: DeepSkyBlue;
+    border-radius: 50px;
+}
+
+
+
+/* для верхнього блоку: */
+.head {
+    width: 1000px;
+    overflow: auto;
+    height: 400px;
+    background: LightBlue ;
+    border-radius: 10px;
+    padding: 10px;
+    border: 6px solid cyan;
+    box-shadow: 0px 7px 23px 0px rgba(219,112,219,1);
+    margin-top: 20px;
+}
+
+/* для середнього блоку: */
+.center , .headerEdit{
+    width: 1000px;
+    text-align: center;
+    background: SkyBlue;
+    border-radius: 10px;
+    padding: 10px;
+    border: 6px solid cyan;
+    box-shadow: 0px 7px 23px 0px rgba(219,112,219,1);
+    
+}
+.headerEdit{
+    height: 65px;
+}
+
+
+/* нижній блок (Edit): */
+.down__edit{
+    width: 1000px;
+   display: none;
+    margin: 0 auto;
+}
+
+.edit__text{
+    resize: none;
+    overflow: auto;
+    width: 1000px;
+    height: 400px;
+    background: DeepSkyBlue;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    border: 6px solid cyan;
+    box-shadow: 0px 7px 23px 0px rgba(219,112,219,1);
+    margin-top: 20px;
+}
+
+/* нижній блок (Style): */
+.down__style{
+    width: 1000px;
+    height: 320px;
+    display: none;
+    margin: 0 auto;
+}
+
+
+.red , .green , .blue , .HotPink , .white , .Silver , .DarkSeaGreen{
+    height: 33px;
+    margin-top: 5px;
+}
+
+/* нижній блок (Add): */
+
+.forms{
+    display: none;
+    text-align: center;
+}
+
+.down__add , .down__mark{
+    width: 400px;
+	height: 360px;
+    margin: 70px auto;
+	display: none;
+	background: #fff;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	padding:20px;
+    text-align: center;
+    background: white;
+     color: Blue;
+}
+.down__mark{
+    height: 180px;
+}
+
+.val1, .val2 , .val3, .val4, .val5, .val6 , .val7{
+    background: none;
+    border: 0px;
+    border-bottom: 2px solid black;
+    width: 30px;
+    text-align: center;
+}
+
+.ul__blok , .ol__blok{
+ display:none;   
+}
+
+.popupColor{
+    display: none;
+	position: fixed;
+    left: 0;
+	right: 0;
+    top: 0;
+	bottom: 0;
+}
+.colortext , .colortextt , .colortexttt{
+     width: 400px;
+	height: 235px;
+    margin: 70px auto;
+	display: none;
+	background: #fff;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	padding:20px;
+    text-align: center;
+    background: Maroon;
+}
+ .colortextt{
+ height: 300px;    
+}
+
+
+.popup{
+    display: none;
+	position: fixed;
+    left: 0;
+	right: 0;
+    top: 0;
+	bottom: 0;
+	background-color: rgba(1, 1, 1, 0.725);
+}
+.inpopup{
+    width: 400px;
+	height: 250px;
+    margin: 70px auto;
+	display: none;
+	background: #fff;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	padding:20px;
+    text-align: center;
+    color: DeepSkyBlue;
+}
+
+ .pass__check{
+    display: none;
+    color:red;
+}
+
+.message , .message1 , .message2 , .message3 , .message4 , .message5 , .message6{
+    color:red;
+    font-size: 9pt;
+}
+.pass{
+    height: 20px;
+    width: 250px;
+    border-radius: 10px;
+}
+
+.im1, .im2 , .im3 , .im4{
+    width: 200px;
+    height: 100px;
+    margin-top: 10px;
+    float: left;
+}
+.popupTable , .popupList{
+        display: none;
+	position: fixed;
+    left: 0;
+	right: 0;
+    top: 0;
+	bottom: 0;
+	background-color: rgba(1, 1, 1, 0.725);
+}

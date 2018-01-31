@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="body">
+  
+     <div class="center">
+      
+      <input type="button" value="B" id="B">
+      <input type="button" value="/" id="kurs">
+      <input type="button" value="U" id="U">
+      
+       <form id="form">
+          
+           <input type="button" value="Edit" id="Edit">
+           <input type="button" value="Blocked" id="Blocked" onclick="funcPopup()">
+                       
+               <span>Text size:</span>
+                <select class="fSize"  onchange="funcSize()">
+                 
+                 <option value="12pt" >12pt
+                 <option value="14pt" >14pt
+                 <option value="16pt" >16pt
+                 <option value="18pt" >18pt
+                 <option value="20pt" >20pt
+                 <option value="22pt" >22pt
+                 
+                 </select>
+ 
+             
+                 <span>Font Family:</span>
+                 
+                  <select class="fFamily"  onchange="funcfamily()">
+                 
+                 <option value="Times New Roman" >Times New Roman
+                 <option value="Arial"  >Arial
+                 <option value="Tahoma" >Tahoma
+                 <option value="Verdana" >Verdana
+                 
+                 </select>
+           
+               <input type="button" value="Color" id="Color" onclick="funcTxtPop()">
+               
+               <input type="button" value="bgColor" id="bgColor" onclick="funcTxtPop()">
+             
+               <div class="popupColor">
+               </div>
+                <div class="colortext">
+                   <div class="red"  style="background: red;"></div>
+                   <div class="HotPink"  style="background: HotPink;"></div>
+                   <div class="blue"  style="background: blue;"></div>
+                   <div class="white"  style="background: white;"></div>
+                    <div class="Silver"  style="background: Silver;"></div>
+                    <div class=" DarkSeaGreen"  style="background: DarkSeaGreen;"></div>
+                   
+               </div>            
+       <div class="colortextt">
+                  
+                   <input type="button" value="Images" id="Image">
+                  
+                   <div class="red"  style="background: red;"></div>
+                   <div class="HotPink"  style="background: HotPink;"></div>
+                   <div class="blue"  style="background: blue;"></div>
+                   <div class="white"  style="background: white;"></div>
+                    <div class="Silver"  style="background: Silver;"></div>
+                    <div class=" DarkSeaGreen"  style="background: DarkSeaGreen;"></div>
+                    
+                    <input type="file" multiple="image/*,image/jpeg" id="file">
+                    
+               </div> 
+                      <div class="colortexttt">
+                      
+                   <div class="im1"  style="background-image:  url(images/1.jpg); background-size: 200px 100px;"></div>
+                   <div class="im2"  style="background-image:  url(images/2.jpg); background-size: 200px 100px;"></div>
+                   <div class="im3"  style="background-image:  url(images/3.jpg); background-size: 200px 100px;"></div>
+                   <div class="im4"  style="background-image:  url(images/4.jpg); background-size: 200px 100px;"></div>
+               </div>
+                       
+              <br>
+                <label>  <input type="checkbox" class="bold" name="oblique" onclick="Fu(this)"> Oblique Text </label>
+                <label>  <input type="checkbox" class="italic" name = "italic" onclick="Fun(this)"> Italic Text </label>
+
+            </form>
+            <form class="positionForm">
+                 <label><input type="radio" value="left" name="position">left</label> 
+                <label> <input type="radio" value="center" name="position">center</label> 
+                <label> <input type="radio" value="right" name="position">right</label>
+                 
+       </form>
+       
+   </div>
+  
+  
+   <div class="head">
+       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim ad magni sed voluptates nobis ex aspernatur voluptatum recusandae, nemo, ducimus neque voluptas vitae placeat eos officia assumenda dicta, voluptatibus eaque esse quo temporibus a ullam consequuntur culpa? Sint, velit. Ipsam maxime esse voluptatibus nemo atque fugit iste ullam distinctio vel inventore nobis adipisci sit suscipit, iure quae accusamus provident nam quaerat, velit quis maiores ipsa facilis ratione sunt deleniti! Distinctio optio minus nostrum, modi animi saepe voluptatem eum eaque aliquid dolores similique rerum, deserunt quia repudiandae, perspiciatis quidem odit aperiam quis at illo. Earum eum adipisci, fugit voluptates laudantium officia placeat odit, necessitatibus repellendus nobis dolor ea unde fugiat illum dignissimos minima, iste dolores eos nostrum repudiandae molestiae asperiores numquam mollitia! Quisquam nihil dolorem laudantium autem tempore eveniet velit qui deleniti magni, dicta ut rerum, eius corporis rem.  
+       
+       </div>
+   
+   <div class="popup">
+       <div class="inpopup"> 
+   <h1>Password</h1> <br>
+    <input type="password" placeholder="Enter Password" class="pass" required>
+     <div class="pass__check">Ви ввели неправильний пароль</div>
+      <p>
+       <input type="button" value="Confirm" id="Confirm">
+       </p>
+       </div>
+   </div>
+
+<div class="down__edit">
+                <div class="headerEdit">
+                <input type="button" value="Save" id="Save">
+               <input type="button" value="Create table" id="CreateTable">
+               <input type="button" value="Create list" id="CreateList"> 
+               </div>                   
+          
+     <center>    <textarea name="" class="edit__text" ></textarea>  </center>
+ 
+          <div class="popupTable"></div>
+           <div class="down__add">
+               <p>
+                Input count of row:<input type="text" class="val1"><span class="message6"></span>
+          </p><p>
+              Input count of cell: <input type="text" class="val2"><span class="message5"></span>
+               </p>
+                <h2>Table style:</h2>
+                <p>
+                Input width of cell:<input type="text" class="val3" ><span class="message4"></span>
+                </p><p>
+              Input height of cell: <input type="text" class="val4"> <span class="message3"></span>
+               </p>
+                <p>
+                   Border width: <input type="text" class="val5"> <span class="message2"></span>
+                </p>
+                  Border type:<select class="down__stl"  onchange="funcStyle()">
+                 
+                 <option value="solid" >solid
+                 <option value="dotted"  >dotted
+                 <option value="inset" >inset
+                 <option value="groove" >groove
+                 
+                 </select>
+              <p></p>
+                  Border color:<select class="down__selectCOL"  onchange="funcfamily()">
+                 
+                 <option value="red" >red
+                 <option value="green"  >green
+                 <option value="blue" >blue
+                 <option value="yellow" >yellow
+                 
+                 </select>
+                
+                <p>
+                <input type="button" value="create" id="create">
+                </p>
+      </div> 
+
+  <div class="popupList"></div>
+
+       <div class="down__mark">         
+              <div class="forms">
+           <h1>Choose what to add:</h1>
+               <form class="down__rad" name="formel">     
+                   <label>  <input type="radio" value="Table" name="o" class="first">Table  </label>
+                   <label> <input type="radio" value="List" name="o" class="second">List  </label>
+           </form>
+           </div>
+               <p class="ulol">
+                        <input type="button" value="ul" class="ul">
+                        <input type="button" value="ol" class="ol">   
+
+               </p>
+               
+                <div class="ul__blok">
+                 <p>
+           Type of mark:<select class="down__styleM"  >
+                 <option value="circle" >circle
+                 <option value="disc"  >disc
+                 <option value="square" >square
+                 </select>
+                 </p>
+                  <p>
+                Input count of list items:<input type="text" class="val6">  <span class="message1"></span>
+                </p>
+                    <p>
+               <input type="button" value="create" id="createList">
+           </p>
+               </div> 
+                
+                 
+               <div class="ol__blok">
+                 <p>
+           Type of mark:<select class="down__styleM1"  >
+                 <option value="1" >Арабські числа
+                 <option value="A"  >Латинські
+                 <option value="I" >Римські
+                 </select>
+                 </p>
+                <p>
+                Input count of list items:<input type="text" class="val7"> <span class="message"></span>
+                </p>
+         <p><input type="button" value="create" id="createList2"></p>
+         </div>  
+      </div>
+   </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
